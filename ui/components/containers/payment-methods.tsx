@@ -46,7 +46,6 @@ export default function PaymentMethods() {
           throw new Error("Failed to fetch payment methods");
         }
         const data = await res.json();
-        console.log({ data });
         setPaymentMethods(data.data || []);
       } catch (error) {
         console.error("Error fetching payment methods", error);
