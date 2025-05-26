@@ -1,8 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Lemon Labs Payment Portal
 
-## Getting Started
+A modern payment portal for customers to view and pay invoices. Built with Next.js, React, TailwindCSS, and Shadcn UI.
 
-First, run the development server:
+## Tech Stack
+
+- Next.js 15
+- React 19
+- TailwindCSS 4
+- Radix UI & Shadcn UI
+- Lucide Icons
+
+## Prerequisites
+
+- Node.js (v18+ recommended)
+- npm, yarn, pnpm, or bun
+
+## Installation
+
+Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
+
+## Running the App
+
+Start the development server:
 
 ```bash
 npm run dev
@@ -14,23 +43,40 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `dev` – Start dev server
+- `build` – Build for production
+- `start` – Start production server
+
+## Usage
+
+1. Open the app in your browser.
+2. View your payment information and outstanding invoice.
+3. Select a payment method (auto-detected by country).
+4. Complete your payment securely.
+5. See a success confirmation page.
+
+## Customization
+
+- Main page: `app/page.tsx`
+- Payment page: `app/payment/page.tsx`
+- Success page: `app/success/page.tsx`
+
+## API Endpoints (for development)
+
+- `/api/paymentMethods` – Returns available payment methods
+- `/api/payment/[id]` – Returns payment info for a given organisation id
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Learn Next.js](https://nextjs.org/learn)
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Check out [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
